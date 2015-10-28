@@ -1,0 +1,64 @@
+from colorama import *
+
+for i in range(x, y)
+    print("These are the numbers analyzed: ")
+    print(i)
+
+def inverted_num(num):
+    num = str(num)
+    invert = num[::-1]
+    return(int(invert))
+
+def palyndrome(a):
+    if(a == invert_num(a)):
+        return False
+    else:
+        return True
+
+def for_function(n):
+    suma = 0
+    for i in range(31):
+        suma  = suma + n
+        n = invert_num(suma)
+        result = palyndrome(suma)
+        if(result == False):
+            return(result)
+            exit()
+    return(result)
+
+def lychrel():
+    for lych in range(x,y + 1):
+        if(for_function(lych) == True):
+            print("Found Lychrel number:", lyc)
+    print("")
+
+def natural_paly():
+    natural = 0
+    for paly in range(x, y + 1):
+        paly = str(paly)
+        if(paly == paly[::-1]):
+            natural = natural + 1
+    return(natural)
+
+def non_lych():
+    natural_paly()
+    counter = 0
+    for lych in range(x, y + 1):
+        if(for_function(lyc) == False):
+            counter = counter + 1
+    print("Number of non-Lycherel numbers:", counter - natural_paly())
+
+def candidate():
+    counter = 0
+    for lych in range(x, y + 1):
+        if(for_function(lych) == True):
+            counter = counter + 1
+    print("Number of Lychrel candidates:", counter)
+
+x=int(input("What's the upper bound: "))
+y= int(input("The lower value: "))
+
+lychrel()
+non_lychrel()
+candidate()
+print("Number of natural palindromes is:", natural_paly())
